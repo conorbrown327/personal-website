@@ -1,0 +1,609 @@
+body {
+  font-family: Roboto, sans-serif;
+  background-image: url('pw_maze_white.png');
+}
+
+img {
+  float: right;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header .row .col-auto {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  transition: 0.1s ease-in-out;
+  /* padding: 1rem; */
+}
+
+h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+h3 {
+  padding: 20px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  color: inherit;
+}
+
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-image: url("./jumbo.jpg");
+  color: #ffffff;
+  /* height: 500px; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 116px;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  z-index: 10;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.1s ease-in-out;
+  padding: 1rem;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+  z-index: 10;
+  position: relative;
+}
+
+/* section .row img {
+  margin: 0 0 30px;
+   width:  100%;
+  height: auto; 
+} */
+
+/* .col-md-6 {
+  margin: 0 0 30px;
+} */
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #fbd1d5;
+  background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+.btn-secondary {
+  background-color: #2a70e0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+/* figure img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  margin-bottom: 30px;
+} */
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.footer-icon {
+  height: 50px;
+  width: auto;
+  margin: 5px;
+}
+
+/* From w3schools - https://www.w3schools.com/howto/howto_css_parallax.asp */
+.parallax {
+  /* The image used */
+  background-image: url("./jumbo.jpg");
+
+  /* Set a specific height */
+  min-height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hide-text {
+  z-index: 1000;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  transition: 0.1s ease-in-out;
+  padding: 1rem;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 0px;
+  width: 100%;
+  background-color: maroon;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: 0.1s ease-in-out;
+}
+
+.nav-link:hover, 
+.nav-link:focus,
+.nav-link.active {
+  color: white;
+  transition: 0.1s ease-in-out;
+}
+
+.nav-link:hover::before, 
+.nav-link:focus::before,
+.nav-link.active::before{
+  height: 100%;
+  transition: 0.1s ease-in-out;
+}
+
+.image-overlay {
+  position: relative;
+}
+
+.image-overlay::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0,0,0,0.4);
+  left: 0;
+  top: 0;
+
+}
+
+.location {
+  margin-left: 40px;
+}
+
+.bordered {
+  border-style:solid;
+  border-color: maroon;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.avatar {
+  border-radius: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width:  100%;
+  height: auto;
+}
+
+.school-img {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  width:  100%;
+  height: auto;
+}
+
+ /* Three columns side by side */
+ .column {
+  margin-left: 16px;
+  margin-right: 16px;
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* code adapted from w3schools - https://www.w3schools.com/howto/howto_css_team.asp */
+ /* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+ .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+} 
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+/* .container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: maroon;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: black;
+} 
+
+.wordCarousel {
+  font-size: 24px;
+  color: #000;
+}
+.wordCarousel div {
+  overflow: hidden;
+  position: relative;
+  float: right;
+  height: 39px;
+  padding-top: 10px;
+  margin-top: -10px;
+  margin-left: 0px;
+}
+.wordCarousel div li {
+  font-family: roboto;
+  color: #000;
+  font-weight: normal;
+  padding: 0 10px;
+  height: 45px;
+  margin-bottom: 45px;
+  display: block;
+}
+
+.flip2 {
+  animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+.flip3 {
+  animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+.flip4 {
+  animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@keyframes flip2 {
+  0% {
+    margin-top: -180px;
+  }
+  5% {
+    margin-top: -90px;
+  }
+  50% {
+    margin-top: -90px;
+  }
+  55% {
+    margin-top: 0px;
+  }
+  99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+@keyframes flip3 {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+@keyframes flip4 {
+  0% {
+    margin-top: -360px;
+  }
+  5% {
+    margin-top: -270px;
+  }
+  25% {
+    margin-top: -270px;
+  }
+  30% {
+    margin-top: -180px;
+  }
+  50% {
+    margin-top: -180px;
+  }
+  55% {
+    margin-top: -90px;
+  }
+  75% {
+    margin-top: -90px;
+  }
+  80% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+.header-name {
+  transition: 0.1s ease-in-out;
+}
+
+.header-name::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background-color: maroon;
+  transition: 0.1s ease-in-out;
+  z-index: -1;
+}
+
+.header-name:hover::before {
+  width: 100%;
+  transition: 0.1s ease-in-out;
+}
+
+.header-name:hover {
+  color: white;
+  transition: 0.1s ease-in-out;
+}
+
+.home-links {
+  color: maroon;
+  text-decoration: none;
+}
+
+.home-links:hover {
+  color: maroon;
+  text-decoration: underline;
+  transition: 0.2s ease-in-out;
+}
+
+.project-img {
+  border-style:solid;
+  border-color: maroon;
+  /* padding: 5px; */
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.years {
+  font-size: 32px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  width: 100%;
+}
+
+.vl {
+  width: 6px;
+  background-color: maroon;
+  margin: 0 auto;
+}
+
+.umn-col-border {
+  border-left: 6px solid #7a0019;
+  margin-left: 2.5rem;
+}
+
+.norm-col-border {
+  border-left: 6px solid #c0232a;;
+  margin-left: 2.5rem;
+}
+
+.edina-col-border {
+  border-left: 6px solid #009d48;
+  margin-left: 2.5rem;
+}
+
+.back-button {
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: maroon;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+  background-color: black;
+  transition: 0.2s ease-in-out;
+}
+
+.portfolio-title {
+  font-size: 48px;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  background-color: maroon;
+  border-radius: 7px;
+  padding: 7px;
+  margin-top: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.school-logo {
+  display: flex;
+  margin :auto;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+  margin: 30px;
+}
+
+.text {
+  padding: 20px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.education-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  position: relative;
+}
+
+ol {
+  list-style-type: square; 
+}
+
+ul {
+  list-style-type: circle;
+}
+
+.project-img-2 {
+  display: inline;
+  float: none;
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-style: solid;
+  border-color: maroon;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.project-video {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  background-color: black;
+}
+
+.project-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .umn-small-screen-line {
+    padding-top: 20px;
+    border-left: 6px solid #7a0019;
+    margin-left: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .norm-small-screen-line {
+    padding-top: 20px;
+    border-left: 6px solid #c0232a;
+    margin-left: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .edina-small-screen-line {
+    padding-top: 20px;
+    border-left: 6px solid #009d48;
+    margin-left: 2.5rem;
+  }
+}
+
+.text-contact {
+  text-align: none;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 1px;
+  position: relative;
+}
