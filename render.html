@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Render</title>
+    <title>Shaders</title>
     <link rel="icon" href="initials-logo-3.png">
     <meta charset="utf-8" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -16,9 +16,10 @@
           <a href="home.html" class="header-name p-3 position-relative text-decoration-none"><span class="fw-bold">Conor Brown:</span></a>
           <div>
               <ul class="flip3 ps-0">
-                  <li>Coder/Developer</li>
-                  <li>UI/UX Enthusiast</li>
-                  <li>Student</li>
+                <li>Coder/Developer</li>
+                <li>B.S. Computer Science</li>
+                <li>UI/UX Enthusiast</li>
+                <li>Student</li>
               </ul>
           </div>
         </h2>
@@ -32,10 +33,10 @@
       </div>
     </header>
 
-    <section class="jumbotron parallax image-overlay" style="background-image: url(./teapot3.PNG);">
+    <section class="jumbotron parallax image-overlay" style="background-image: url(./Phong-shading.jpg);">
         <div class="row justify-content-center">
           <div class="col-auto text-center">
-            <h2>Artsy Rendering</h2>
+            <h2>Shaders</h2>
             </div>
         </div>
     </section>
@@ -64,61 +65,38 @@
         <div class="col-8 col-md-8 col-sm-12 education-text">
           <div class="bordered">
             <p>
-              A semester long project that traversed the UI design process to create a simple android app interface. 
-              The project was split into three milestones that focused on different stages of the UI design process.
-              From related course <a  class="home-links" href="csci5115.pdf" target="blank_"> syllabus</a>:
+              In this project I created 3 shader programs. One that followed Gouraud shading, one based on Phong shading and one with a type of "Artsy" shader akin to 
+              <i>The Legend of Zelda: The Wind Waker</i>. This required me to calculate realistic and artistic per-pixel lighting in real time.
+               Additionally, I needed to create a shader that would modify geometry on the fly to create viewpoint-dependent effects such as silhouette edges.
             </p>
-            <ul>
-              <li>
-                Milestone 1: You will design, conduct, and analyze a user research study. You will generate and select technology ideas based on your findings.
-                You will present your work to classmates in a virtual poster presentation.
-              </li>
-              <li>
-                Milestone 2: You will implement your idea in an iterative way by completing a low-fidelity prototype, testing it, and implementing it as a functional prototype. 
-                You will demonstrate your prototype in a virtual demo presentation.
-              </li>
-              <li>
-                Milestone 3: You will evaluate your prototype by designing, conducting, and analyzing a user testing study.
-                You will present a summative overview of your entire class project in a 10-minute oral presentation via Zoom.
-              </li>
-            </ul>
+
+            <p><a class="home-links" href="https://github.com/conorbrown327/Shaders" target="blank_">View this project on Github</a>. 
+              All of my work is within the shaders subdirectory. The rest was provided.</p>
             
-            <span>Technical Skill(s): UI Design, Koltin/Android Studio</span>
-            <p>Associated Class: User Intereface Design, Implementation and Evaluation</p>
+            <span>Technical Skill(s): Shaders, Linear Algebra, Lighting Models, C++, MinGfx</span>
+            <p>Associated Class: Programming Graphics and Games</p>
+            <span>Note: I apologize for the lack of images on this project. I no longer have access to the University computers that I ran this project on originally and I am
+              having issues getting it to run on my personal computer. I will update as soon as I solve the issue. Thank you for understanding.</span>
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-12">
-          <h2 class="project-title">M1 - Poster</h2>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-12">
-          <img class="school-img" src="M1-Poster.png" alt="M1-Poster">
-        </div>
-      </div>
+      <!-- <div class="row">
+        <div clas="col-12">
+          <div class="bordered education-text">
+            <h2 class="project-title">Artsy Example</h2>
+            <img class="school-img my-2" src="cow.png" alt="">
+            <span>a</span>
+          </div>
 
-      <div class="row">
-        <div class="col-12">
-          <h2 class="project-title">M2 - Application</h2>
+          <div class="bordered education-text my-3">
+            <h2 class="project-title">Phong Example</h2>
+            <img class="school-img my-2" src="head.png" alt="">
+            <span>a</span>
+          </div>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <h2 class="project-title">M3 - Presentation Video &amp; Slides</h2>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <video class="p-3 project-video" width="100%" height="auto" controls preload="none">
-            <source src="M3-Presentation.mp4" type="video/mp4" />
-        </div>
-      </div>
+      </div> -->
 
     <footer class="container">
         <div class="row justify-content-between">
